@@ -1,0 +1,14 @@
+Run these command for daytime server :
+
+1.sudo apt-get install xinetd
+
+2.sudo vim /etc/xinetd.d/daytime
+In this file make tcp and udp enable means disable = no
+
+3.sudo invoke-rc.d xinetd reload
+
+4. Run ./client 127.0.0.1
+
+
+
+

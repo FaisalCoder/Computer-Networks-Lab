@@ -1,0 +1,24 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+	int option,size;
+	cout<<"Enter the option to select the protocol\n1) Selective Repeat\n2) Go Back N"<<endl;
+	cin>>option;
+	switch(option)
+	{	
+		case 1:{
+				cout<<"Enter the size of sequence no."<<endl;cin>>size;
+				int sent_window[(int)pow(2,size)-1]; 
+				break;
+		       }
+		case 2:{
+				break;
+		       }
+		default:{
+				cout<<"Sorry! You have entered a wrong option."<<endl;break;
+			}
+	}
+	return 0;
+}
